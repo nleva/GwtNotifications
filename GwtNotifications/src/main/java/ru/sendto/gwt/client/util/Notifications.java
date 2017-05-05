@@ -28,13 +28,13 @@ public class Notifications {
 	}
 
 	private static native void _init()/*-{
-		@ru.sendto.lmps.gwt.client.util.Notifications::isAccess = false;
+		@ru.sendto.gwt.client.util.Notifications::isAccess = false;
 		if (!$wnd.Notification)
 			return;
 		//Запрашиваем доступ к уведомлениям.
 		Notification.requestPermission(function(result) {
 			if (result === 'granted')
-				@ru.sendto.lmps.gwt.client.util.Notifications::isAccess = true;
+				@ru.sendto.gwt.client.util.Notifications::isAccess = true;
 		});
 	}-*/;
 
